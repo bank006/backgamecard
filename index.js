@@ -123,7 +123,7 @@ app.post('/create_rooms' , (req , res)=>{
   
 })
 
-app.post('/create_rooms2' , (req , res)=>{
+app.post('/create_rooms_two' , (req , res)=>{
     const {  pincode , uuiduser } = req.body
     try{
         const query = conn.query('INSERT INTO rooms ( pincode ,uuiduser) VALUES ($1 , $2  )' ,[ pincode , uuiduser])
