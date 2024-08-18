@@ -10,7 +10,8 @@ app.use(cors())
 app.use(express.json());
 
 const conn = require('./database/db')
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
+
 
 conn.connect((err) => {
     if (err) {
