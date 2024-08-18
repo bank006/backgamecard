@@ -3,7 +3,7 @@ const connectionString = process.env.DATABASE_URL;
 
 const conn = new Pool({
     connectionString: connectionString,
-    connectionTimeoutMillis: 10000  // เพิ่มค่า timeout ให้มากขึ้น (เช่น 10 วินาที)
+    connectionTimeoutMillis: 30000  // เพิ่มค่า timeout ให้มากขึ้น (เช่น 10 วินาที)
 });
 
 conn.connect((err, client, release) => {
